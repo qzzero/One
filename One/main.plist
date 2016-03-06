@@ -1,0 +1,17 @@
+{
+hpEntity =     {
+sWebLk = "http://m.wufazhuce.com/one/1267";
+strAuthor = "\U767e\U5e74\U5b64\U72ec&\U859b\U5c0f\U767d\U513f \U4f5c\U54c1";
+strContent = "\U65f7\U65e5\U6301\U4e45\U4e0d\U5bb9\U6613\Uff0c\U4e00\U5207\U7269\U4e8b\U7684\U7f8e\U597d\U5728\U4e8e\U6ca1\U65f6\U95f4\U53d8\U574f\U3002 by \U674e\U78a7\U534e";
+strDayDiffer = 0;
+strHpId = 1267;
+strHpTitle = "VOL.1244";
+strLastUpdateDate = "2016-03-04 07:08:43";
+strMarketTime = "2016-03-04";
+strOriginalImgUrl = "http://image.wufazhuce.com/FtQx8oLHlfeYMm02u8ekV2UBcB6d";
+strPn = "";
+strThumbnailUrl = "http://image.wufazhuce.com/FtQx8oLHlfeYMm02u8ekV2UBcB6d";
+wImgUrl = "";
+};
+result = SUCCESS;
+}
