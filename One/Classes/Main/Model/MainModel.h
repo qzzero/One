@@ -15,7 +15,7 @@
 @property (nonatomic, retain) NSString *strContent;//主页句子
 
 @property (nonatomic, retain) NSString *strHpTitle;//第几期
-
+@property (nonatomic, retain) NSString * strMarketTime;//时间
 
 
 @end

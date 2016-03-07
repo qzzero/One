@@ -11,15 +11,15 @@
 #import <AFHTTPSessionManager.h>
 #import "NetworkEngine.h"
 #import "MainModel.h"
-#import "MainView.h"
-
+#import "OneMainView.h"
+#import <UIImageView+WebCache.h>
 
 @interface MainViewController ()
 
 @property (nonatomic, retain)NSArray *partitionarray;
 @property (nonatomic, retain)NSMutableArray *allarray;
 
-@property(nonatomic, strong) MainView *mainView;
+@property(nonatomic, strong) OneMainView *oneMain;
 
 @end
 
@@ -28,8 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
     
     
+//   self.navigationController.accessibilityAssistiveTechnologyFocusedIdentifiers
     self.view.backgroundColor = [UIColor whiteColor];
     
     
@@ -43,11 +45,14 @@
     [self requestModel];
     
     
-    self.mainView=[[MainView alloc]initWithFrame:self.view.frame];
+    
+   self.oneMain=[[OneMainView alloc]initWithFrame:self.view.frame];
     
     
-    [self.view addSubview:self.mainView];
+   
     
+    [self.view addSubview:_oneMain];
+       
     
     
     
@@ -90,18 +95,22 @@
         NSLog(@"%lld",downloadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@",responseObject);
+        
         NSDictionary *rootDic=responseObject;
-        
-        NSDictionary *dic=rootDic[@"hpEnity"];
-        
-        MainModel *model=[[MainModel alloc]init];
-        
-        [model setValuesForKeysWithDictionary:dic];
+      
+        NSDictionary *dic=rootDic[@"hpEntity"];
+
         
         
-        [_allarray addObject:model];
+        self.oneMain.name.text=dic[@"strAuthor"];//图片作品名及作者
+        self.oneMain.timelabel.text = dic[@"strMarketTime"];//时间
+        self.oneMain.timelabel.text = dic[@"strMarketTime"];//时间
+        self.oneMain.sessionLable.text=dic[@"strHpTitle"];//第几期
+        self.oneMain.sentencelabel.text=dic[@"strContent"];//句子
         
+        [self.oneMain.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://image.wufazhuce.com/FtQx8oLHlfeYMm02u8ekV2UBcB6d"] placeholderImage:nil];
         
+    
         
         
         

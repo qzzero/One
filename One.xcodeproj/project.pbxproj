@@ -18,10 +18,7 @@
 		7ABCE4B51C8C296C008FCB55 /* IndividualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4921C8C296C008FCB55 /* IndividualViewController.m */; };
 		7ABCE4B61C8C296C008FCB55 /* IndividualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4931C8C296C008FCB55 /* IndividualViewController.xib */; };
 		7ABCE4B71C8C296C008FCB55 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4991C8C296C008FCB55 /* MainViewController.m */; };
-		7ABCE4B81C8C296C008FCB55 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE49A1C8C296C008FCB55 /* MainViewController.xib */; };
 		7ABCE4B91C8C296C008FCB55 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE49D1C8C296C008FCB55 /* MainModel.m */; };
-		7ABCE4BA1C8C296C008FCB55 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4A01C8C296C008FCB55 /* MainTableViewCell.m */; };
-		7ABCE4BB1C8C296C008FCB55 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4A21C8C296C008FCB55 /* MainView.m */; };
 		7ABCE4BC1C8C296C008FCB55 /* ProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4A61C8C296C008FCB55 /* ProblemViewController.m */; };
 		7ABCE4BD1C8C296C008FCB55 /* ProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4A71C8C296C008FCB55 /* ProblemViewController.xib */; };
 		7ABCE4BE1C8C296C008FCB55 /* ThingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4AD1C8C296C008FCB55 /* ThingViewController.m */; };
@@ -32,6 +29,7 @@
 		7ABCE4C91C8C2BAF008FCB55 /* main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4C81C8C2BAF008FCB55 /* main.plist */; };
 		7ABCE4CB1C8C2BC1008FCB55 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4CA1C8C2BC1008FCB55 /* File */; };
 		7ABCE4CD1C8C2D79008FCB55 /* Individual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4CC1C8C2D79008FCB55 /* Individual.storyboard */; };
+		7ABCE4D21C8C4C6D008FCB55 /* OneMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4D11C8C4C6D008FCB55 /* OneMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,13 +49,8 @@
 		7ABCE4931C8C296C008FCB55 /* IndividualViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndividualViewController.xib; sourceTree = "<group>"; };
 		7ABCE4981C8C296C008FCB55 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7ABCE4991C8C296C008FCB55 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		7ABCE49A1C8C296C008FCB55 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		7ABCE49C1C8C296C008FCB55 /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		7ABCE49D1C8C296C008FCB55 /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
-		7ABCE49F1C8C296C008FCB55 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
-		7ABCE4A01C8C296C008FCB55 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
-		7ABCE4A11C8C296C008FCB55 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		7ABCE4A21C8C296C008FCB55 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		7ABCE4A51C8C296C008FCB55 /* ProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemViewController.h; sourceTree = "<group>"; };
 		7ABCE4A61C8C296C008FCB55 /* ProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemViewController.m; sourceTree = "<group>"; };
 		7ABCE4A71C8C296C008FCB55 /* ProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProblemViewController.xib; sourceTree = "<group>"; };
@@ -73,6 +66,8 @@
 		7ABCE4C81C8C2BAF008FCB55 /* main.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = main.plist; sourceTree = "<group>"; };
 		7ABCE4CA1C8C2BC1008FCB55 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		7ABCE4CC1C8C2D79008FCB55 /* Individual.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Individual.storyboard; sourceTree = "<group>"; };
+		7ABCE4D01C8C4C6D008FCB55 /* OneMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMainView.h; sourceTree = "<group>"; };
+		7ABCE4D11C8C4C6D008FCB55 /* OneMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMainView.m; sourceTree = "<group>"; };
 		C2D70431144CADC305EAE710 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF554878F6F1F0445E250533 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ECAF8C5F0849E283471B05C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -230,7 +225,6 @@
 			children = (
 				7ABCE4981C8C296C008FCB55 /* MainViewController.h */,
 				7ABCE4991C8C296C008FCB55 /* MainViewController.m */,
-				7ABCE49A1C8C296C008FCB55 /* MainViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,10 +241,8 @@
 		7ABCE49E1C8C296C008FCB55 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7ABCE49F1C8C296C008FCB55 /* MainTableViewCell.h */,
-				7ABCE4A01C8C296C008FCB55 /* MainTableViewCell.m */,
-				7ABCE4A11C8C296C008FCB55 /* MainView.h */,
-				7ABCE4A21C8C296C008FCB55 /* MainView.m */,
+				7ABCE4D01C8C4C6D008FCB55 /* OneMainView.h */,
+				7ABCE4D11C8C4C6D008FCB55 /* OneMainView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,7 +411,6 @@
 				7ABCE4CD1C8C2D79008FCB55 /* Individual.storyboard in Resources */,
 				7ABCE4BD1C8C296C008FCB55 /* ProblemViewController.xib in Resources */,
 				7ABCE4BF1C8C296C008FCB55 /* ThingViewController.xib in Resources */,
-				7ABCE4B81C8C296C008FCB55 /* MainViewController.xib in Resources */,
 				7ABCE4B41C8C296C008FCB55 /* ArticleViewController.xib in Resources */,
 				7ABCE4801C8C26D6008FCB55 /* LaunchScreen.storyboard in Resources */,
 				7ABCE4CB1C8C2BC1008FCB55 /* File in Resources */,
@@ -490,10 +481,9 @@
 				7ABCE4B51C8C296C008FCB55 /* IndividualViewController.m in Sources */,
 				7ABCE4C01C8C296C008FCB55 /* ThingModel.m in Sources */,
 				7ABCE4C41C8C2A5D008FCB55 /* NetworkEngine.m in Sources */,
-				7ABCE4BB1C8C296C008FCB55 /* MainView.m in Sources */,
 				7ABCE4BC1C8C296C008FCB55 /* ProblemViewController.m in Sources */,
 				7ABCE4751C8C26D6008FCB55 /* main.m in Sources */,
-				7ABCE4BA1C8C296C008FCB55 /* MainTableViewCell.m in Sources */,
+				7ABCE4D21C8C4C6D008FCB55 /* OneMainView.m in Sources */,
 				7ABCE4B91C8C296C008FCB55 /* MainModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
