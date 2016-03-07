@@ -10,9 +10,14 @@
 
 @interface ThingModel : NSObject
 
-//@property (nonatomic, retain)NSString *ThingImage;
-//
-//- (instancetype)initWithDictionary:(NSDictionary *)dict;
+@property (nonatomic, retain)NSString *strBu;//东西图片
+
+@property (nonatomic, strong)NSString *strTt;//东西名字
+@property (nonatomic, strong)NSString *strTc;//东西描述
+@property (nonatomic, strong)NSString *strTm;//东西时间
+
+
+
 
 
 @end

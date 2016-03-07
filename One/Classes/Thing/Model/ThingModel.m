@@ -10,13 +10,12 @@
 
 @implementation ThingModel
 
-//- (instancetype)initWithDictionary:(NSDictionary *)dict{
-//    self = [super init];
-//    if (self) {
-//        self.ThingImage = dict[@"Image"];
-//    }
-//    return self;
-//
-//}
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
+    
+    
+    
+}
 
 @end

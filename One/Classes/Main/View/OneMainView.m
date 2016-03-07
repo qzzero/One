@@ -39,12 +39,12 @@
     
     self.imageView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 100, kweight-20, kweight-40)];
     
-    self.imageView.backgroundColor=[UIColor redColor];
+    self.imageView.backgroundColor=[UIColor whiteColor];
     [self addSubview:self.imageView];
     
     
     
-    self.name=[[UILabel alloc]initWithFrame:CGRectMake(kweight-130, kweight + 65, 150, 44)];
+    self.name=[[UILabel alloc]initWithFrame:CGRectMake(kweight-130, kweight + 65, 140, 44)];
     
     self.name.text=@"作品名及作者";
     self.name.numberOfLines = 0;

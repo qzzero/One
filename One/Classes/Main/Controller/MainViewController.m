@@ -84,7 +84,7 @@
 
 - (void)requestModel{
     
-    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getHpinfo?strLastUpdateDate=2016-02-24+09%3A46%3A35&strDate=2016-03-05";
+    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getHpinfo?strLastUpdateDate=2016-02-24+09%3A46%3A35&strDate=2016-03-07";
     
     
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
@@ -108,7 +108,7 @@
         self.oneMain.sessionLable.text=dic[@"strHpTitle"];//第几期
         self.oneMain.sentencelabel.text=dic[@"strContent"];//句子
         
-        [self.oneMain.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://image.wufazhuce.com/FtQx8oLHlfeYMm02u8ekV2UBcB6d"] placeholderImage:nil];
+        [self.oneMain.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://image.wufazhuce.com/FmfLtLb-b_AKikPCvLph96wdOxSb"] placeholderImage:nil];
         
     
         

@@ -30,6 +30,14 @@
 		7ABCE4CB1C8C2BC1008FCB55 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4CA1C8C2BC1008FCB55 /* File */; };
 		7ABCE4CD1C8C2D79008FCB55 /* Individual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABCE4CC1C8C2D79008FCB55 /* Individual.storyboard */; };
 		7ABCE4D21C8C4C6D008FCB55 /* OneMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCE4D11C8C4C6D008FCB55 /* OneMainView.m */; };
+		7ACB42D31C8D1591001F82FC /* ArticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB42D21C8D1591001F82FC /* ArticleView.m */; };
+		7ACB42D61C8D17AE001F82FC /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB42D51C8D17AE001F82FC /* ArticleModel.m */; };
+		7ACB42DB1C8D2331001F82FC /* ProblemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB42DA1C8D2331001F82FC /* ProblemModel.m */; };
+		7ACB42DE1C8D2346001F82FC /* ProblemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB42DD1C8D2346001F82FC /* ProblemView.m */; };
+		7ACB42E11C8D23CD001F82FC /* ThingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB42E01C8D23CD001F82FC /* ThingView.m */; };
+		7ACB43271C8D63C3001F82FC /* Problem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ACB43261C8D63C3001F82FC /* Problem.plist */; };
+		7AFFBEFF1C8D749200D1A4CA /* Aeticle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AFFBEFE1C8D749200D1A4CA /* Aeticle.plist */; };
+		7AFFBF021C8D978000D1A4CA /* IndividualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFFBF011C8D978000D1A4CA /* IndividualView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,20 @@
 		7ABCE4CC1C8C2D79008FCB55 /* Individual.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Individual.storyboard; sourceTree = "<group>"; };
 		7ABCE4D01C8C4C6D008FCB55 /* OneMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMainView.h; sourceTree = "<group>"; };
 		7ABCE4D11C8C4C6D008FCB55 /* OneMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMainView.m; sourceTree = "<group>"; };
+		7ACB42D11C8D1591001F82FC /* ArticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleView.h; sourceTree = "<group>"; };
+		7ACB42D21C8D1591001F82FC /* ArticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleView.m; sourceTree = "<group>"; };
+		7ACB42D41C8D17AE001F82FC /* ArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleModel.h; sourceTree = "<group>"; };
+		7ACB42D51C8D17AE001F82FC /* ArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleModel.m; sourceTree = "<group>"; };
+		7ACB42D91C8D2331001F82FC /* ProblemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemModel.h; sourceTree = "<group>"; };
+		7ACB42DA1C8D2331001F82FC /* ProblemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemModel.m; sourceTree = "<group>"; };
+		7ACB42DC1C8D2346001F82FC /* ProblemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemView.h; sourceTree = "<group>"; };
+		7ACB42DD1C8D2346001F82FC /* ProblemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemView.m; sourceTree = "<group>"; };
+		7ACB42DF1C8D23CD001F82FC /* ThingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThingView.h; sourceTree = "<group>"; };
+		7ACB42E01C8D23CD001F82FC /* ThingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThingView.m; sourceTree = "<group>"; };
+		7ACB43261C8D63C3001F82FC /* Problem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Problem.plist; sourceTree = "<group>"; };
+		7AFFBEFE1C8D749200D1A4CA /* Aeticle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Aeticle.plist; sourceTree = "<group>"; };
+		7AFFBF001C8D978000D1A4CA /* IndividualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndividualView.h; path = One/Classes/Individual/View/IndividualView.h; sourceTree = SOURCE_ROOT; };
+		7AFFBF011C8D978000D1A4CA /* IndividualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndividualView.m; path = One/Classes/Individual/View/IndividualView.m; sourceTree = SOURCE_ROOT; };
 		C2D70431144CADC305EAE710 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF554878F6F1F0445E250533 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ECAF8C5F0849E283471B05C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +186,8 @@
 		7ABCE48D1C8C296C008FCB55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB42D41C8D17AE001F82FC /* ArticleModel.h */,
+				7ACB42D51C8D17AE001F82FC /* ArticleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +195,9 @@
 		7ABCE48E1C8C296C008FCB55 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB42D11C8D1591001F82FC /* ArticleView.h */,
+				7ACB42D21C8D1591001F82FC /* ArticleView.m */,
+				7AFFBEFE1C8D749200D1A4CA /* Aeticle.plist */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +233,8 @@
 		7ABCE4951C8C296C008FCB55 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7AFFBF001C8D978000D1A4CA /* IndividualView.h */,
+				7AFFBF011C8D978000D1A4CA /* IndividualView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +299,8 @@
 		7ABCE4A81C8C296C008FCB55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB42D91C8D2331001F82FC /* ProblemModel.h */,
+				7ACB42DA1C8D2331001F82FC /* ProblemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +308,9 @@
 		7ABCE4A91C8C296C008FCB55 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB42DC1C8D2346001F82FC /* ProblemView.h */,
+				7ACB42DD1C8D2346001F82FC /* ProblemView.m */,
+				7ACB43261C8D63C3001F82FC /* Problem.plist */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +347,8 @@
 		7ABCE4B21C8C296C008FCB55 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB42DF1C8D23CD001F82FC /* ThingView.h */,
+				7ACB42E01C8D23CD001F82FC /* ThingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AFFBEFF1C8D749200D1A4CA /* Aeticle.plist in Resources */,
 				7ABCE47D1C8C26D6008FCB55 /* Assets.xcassets in Resources */,
 				7ABCE4C91C8C2BAF008FCB55 /* main.plist in Resources */,
 				7ABCE4B61C8C296C008FCB55 /* IndividualViewController.xib in Resources */,
@@ -413,6 +450,7 @@
 				7ABCE4BF1C8C296C008FCB55 /* ThingViewController.xib in Resources */,
 				7ABCE4B41C8C296C008FCB55 /* ArticleViewController.xib in Resources */,
 				7ABCE4801C8C26D6008FCB55 /* LaunchScreen.storyboard in Resources */,
+				7ACB43271C8D63C3001F82FC /* Problem.plist in Resources */,
 				7ABCE4CB1C8C2BC1008FCB55 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,15 +511,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABCE4781C8C26D6008FCB55 /* AppDelegate.m in Sources */,
+				7ACB42E11C8D23CD001F82FC /* ThingView.m in Sources */,
 				7ABCE4B71C8C296C008FCB55 /* MainViewController.m in Sources */,
 				7ABCE4B31C8C296C008FCB55 /* ArticleViewController.m in Sources */,
 				7ABCE47B1C8C26D6008FCB55 /* One.xcdatamodeld in Sources */,
+				7ACB42DE1C8D2346001F82FC /* ProblemView.m in Sources */,
 				7ABCE4C71C8C2A88008FCB55 /* ShareViewController.m in Sources */,
+				7ACB42D31C8D1591001F82FC /* ArticleView.m in Sources */,
 				7ABCE4BE1C8C296C008FCB55 /* ThingViewController.m in Sources */,
 				7ABCE4B51C8C296C008FCB55 /* IndividualViewController.m in Sources */,
+				7AFFBF021C8D978000D1A4CA /* IndividualView.m in Sources */,
 				7ABCE4C01C8C296C008FCB55 /* ThingModel.m in Sources */,
 				7ABCE4C41C8C2A5D008FCB55 /* NetworkEngine.m in Sources */,
 				7ABCE4BC1C8C296C008FCB55 /* ProblemViewController.m in Sources */,
+				7ACB42DB1C8D2331001F82FC /* ProblemModel.m in Sources */,
+				7ACB42D61C8D17AE001F82FC /* ArticleModel.m in Sources */,
 				7ABCE4751C8C26D6008FCB55 /* main.m in Sources */,
 				7ABCE4D21C8C4C6D008FCB55 /* OneMainView.m in Sources */,
 				7ABCE4B91C8C296C008FCB55 /* MainModel.m in Sources */,

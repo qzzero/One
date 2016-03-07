@@ -5,11 +5,16 @@
 //  Created by scjy on 16/3/3.
 //  Copyright © 2016年 乔自朋. All rights reserved.
 //
+//文章
 
 #import "ArticleViewController.h"
 #import "ShareViewController.h"
 #import <AFHTTPSessionManager.h>
 #import "NetworkEngine.h"
+
+#define kweight [UIScreen mainScreen].bounds.size.width
+#define kheight [UIScreen mainScreen].bounds.size.height
+
 @interface ArticleViewController ()
 
 @end
@@ -25,11 +30,21 @@
     self.navigationItem.rightBarButtonItem = rightBarButton;
 
     
-//    [self requestModel];
+    [self requestModel];
+    
+   
     
     
-    
-    
+}
+
+
+//实现代理方法
+
+- (void)networkDidStartLoading:(NetworkEngine *)networkEngine{
+    NSLog(@"网络请求开始");
+}
+- (void)networkDidFinishLoading:(NetworkEngine *)networkEngine withResponseObject:(id)responseObject{
+    NSLog(@"%@",responseObject);
 }
 
 
@@ -42,31 +57,45 @@
     
 }
 
-//- (void)requestModel{
-//
-//    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getC_N?strMS=1&strDate=2016-03-05&strRow=1";
-//
-//
-//    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-//    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-//    
-//    [sessionManager GET:str parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-//        NSLog(@"%lld",downloadProgress.totalUnitCount);
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSLog(@"%@",responseObject);
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"%@",error);
-//    }];
-//
-//}
+
+#pragma mark ------网络请求解析 获得数据
+- (void)requestModel{
+
+    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getC_N?strMS=1&strDate=2016-03-05&strRow=1";
 
 
-//- (void)networkDidStartLoading:(NetworkEngine *)networkEngine{
-//
-//    NSLog(@"网络请求开始");
-//
-//
-//}
+    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
+    
+    [sessionManager GET:str parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"%lld",downloadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+        
+        
+        NSDictionary *dic=responseObject;
+        
+        NSDictionary *rootdic=dic[@"contentEntity"];
+        
+        NSString *str=rootdic[@"sWebLk"];
+        
+        UIWebView *webview=[[UIWebView alloc]initWithFrame:self.view.frame];
+        
+        
+        NSURLRequest *requate=[[NSURLRequest alloc]initWithURL:[NSURL URLWithString:str]];
+        [webview loadRequest:requate];
+        
+        [self.view addSubview:webview];
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+
+}
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
