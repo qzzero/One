@@ -35,7 +35,6 @@
     self.navigationItem.rightBarButtonItem = rightBarButton;
     
     
-    
     //请求网络数据
    [self requestModel];
     

@@ -84,7 +84,7 @@
 
 - (void)requestModel{
     
-    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getHpinfo?strLastUpdateDate=2016-02-24+09%3A46%3A35&strDate=2016-03-07";
+    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getHpinfo?strLastUpdateDate=2016-02-24+09%3A46%3A35&strDate=2016-03-08";
     
     
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
