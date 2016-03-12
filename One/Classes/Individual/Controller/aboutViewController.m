@@ -58,6 +58,7 @@
     
     sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
+    
     [sessionManager GET:str parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
        NSLog(@"%lld",downloadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

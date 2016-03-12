@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface IndividualViewController : UIViewController
-@property(nonatomic, strong)NSString *str;
+
 @end

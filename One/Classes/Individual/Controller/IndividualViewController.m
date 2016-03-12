@@ -11,7 +11,9 @@
 #import "IndividualView.h"
 #import "settingViewController.h"
 #import "aboutViewController.h"
+#import "LoginViewController.h"
 
+#import "MMZCViewController.h"
 
 #define kweight [UIScreen mainScreen].bounds.size.width
 #define kheight [UIScreen mainScreen].bounds.size.height
@@ -92,7 +94,12 @@
 
 - (void)login:(UIButton *)btn{
 
-
+    MMZCViewController *loginvc = [[MMZCViewController alloc] init];
+    
+    loginvc.str = self.settingtf.text;
+    //：使用导航控制器推出下一个试图控制器
+    //self.navigationController是当前视图控制器的导航视图控制器
+    [self.navigationController pushViewController:loginvc animated:YES];
 
 
 

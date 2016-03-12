@@ -23,7 +23,7 @@
 -(void)customView{
 
     
-    self.ThingImge = [[UIImageView alloc] initWithFrame:CGRectMake(10, 70, kweight - 20, 440)];
+    self.ThingImge = [[UIImageView alloc] initWithFrame:CGRectMake(10, 70, kweight - 20, kheight - 150)];
     self.ThingImge.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.ThingImge];
     
@@ -34,7 +34,7 @@
     [self addSubview: self.ThingName];
     
     
-    self.ThingDescribe = [[UILabel alloc] initWithFrame:CGRectMake(10, 580, 210, 40)];
+    self.ThingDescribe = [[UILabel alloc] initWithFrame:CGRectMake(10, 580, kweight, 40)];
     self.ThingDescribe.text = @"东西描述";
     self.ThingDescribe.numberOfLines=0;
     [self addSubview: self.ThingDescribe];

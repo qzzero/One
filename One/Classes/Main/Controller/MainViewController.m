@@ -84,8 +84,10 @@
 
 - (void)requestModel{
     
-    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getHpinfo?strLastUpdateDate=2016-02-24+09%3A46%3A35&strDate=2016-03-08";
-    
+    NSString *str = @"http://bea.wufazhuce.com/OneForWeb/one/getHpinfo?strLastUpdateDate=2016-02-24+09%3A46%3A35&strDate=2016-03-12";
+    //http://m.wufazhuce.com/one/1275
+    //m.wufazhuce.com/one/
+    //http://v3.wufazhuce.com:8000/api/hp/more/0?
     
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
@@ -108,7 +110,7 @@
         self.oneMain.sessionLable.text=dic[@"strHpTitle"];//第几期
         self.oneMain.sentencelabel.text=dic[@"strContent"];//句子
         
-        [self.oneMain.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://image.wufazhuce.com/FmfLtLb-b_AKikPCvLph96wdOxSb"] placeholderImage:nil];
+        [self.oneMain.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://image.wufazhuce.com/FixR2HFxYq3jGN5gHB-dzaGeShid"] placeholderImage:nil];
         
     
         

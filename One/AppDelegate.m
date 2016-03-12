@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.m
 //  One
 //
@@ -15,7 +15,7 @@
 #import "ThingViewController.h"
 #import "IndividualViewController.h"
 
-
+#import <SMS_SDK/SMSSDK.h>
 
 @interface AppDelegate ()
 
@@ -27,6 +27,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+    
+    //初始化应用，appKey和appSecret从后台申请得
+    [SMSSDK registerApp:@"10360075efd96"
+             withSecret:@"180448e85c004e01b90a4fc245485b4c"];
+    
+    
+    
+    
     
     
     UITabBarController *tabBarvc = [[UITabBarController alloc]init];
@@ -56,7 +66,7 @@
     //设置标签栏文字
     Articlevc.tabBarItem.title = @"文章";
     //设置标签栏图片
-    Articlevc.tabBarItem.image = [UIImage imageNamed:@"Icon-Spotlight-41"];
+    Articlevc.tabBarItem.image = [UIImage imageNamed:@"Icon-Spotlight-47"];
     
     
     
@@ -113,8 +123,6 @@
     
     
     self.window.rootViewController = tabBarvc;
-    
-    
     
     
     

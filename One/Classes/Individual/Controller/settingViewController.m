@@ -9,8 +9,8 @@
 #import "settingViewController.h"
 #import "UserAgreementViewController.h"
 #import "FeedBackViewController.h"
-
-
+#import "DKNightVersion.h"
+#import "TQViewController.h"
 #define kweight [UIScreen mainScreen].bounds.size.width
 #define kheight [UIScreen mainScreen].bounds.size.height
 
@@ -121,6 +121,44 @@
 }
 
 
+//夜间模式
+- (void)night:(UIButton *)btn{
+
+
+    if ([DKNightVersionManager currentThemeVersion] == DKThemeVersionNight) {
+        [DKNightVersionManager dawnComing];
+        NSLog(@"切换成白天");
+    } else {
+        [DKNightVersionManager nightFalling];
+        NSLog(@"切换为晚上");
+    }
+    
+
+
+//夜间模式，//评分，分享，优化
+
+}
+
+//评分
+
+
+- (void)score:(UIButton *)btn{
+
+    TQViewController *scorevc = [[TQViewController alloc] init];
+    
+    scorevc.str = self.useragreementf.text;
+    //：使用导航控制器推出下一个试图控制器
+    //self.navigationController是当前视图控制器的导航视图控制器
+    [self.navigationController pushViewController:scorevc animated:YES];
+
+
+
+
+}
+
+
+
+//用户协议
 - (void)useragreement:(UIButton *)btn{
     
     UserAgreementViewController *useragreementvc = [[UserAgreementViewController alloc] init];
@@ -132,7 +170,7 @@
     
 }
 
-
+//反馈
 - (void)feedback:(UIButton *)btn{
     
     FeedBackViewController *feedbackvc = [[FeedBackViewController alloc] init];
@@ -143,7 +181,6 @@
     [self.navigationController pushViewController:feedbackvc animated:YES];
     
 }
-
 
 
 
