@@ -37,14 +37,14 @@
     
     
     
-    self.imageView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 100, kweight-20, kweight-40)];
+    self.imageView=[[UIImageView alloc]initWithFrame:CGRectMake(10, 100, kweight-20, kheight * 51/100)];
     
     self.imageView.backgroundColor=[UIColor whiteColor];
     [self addSubview:self.imageView];
     
     
     
-    self.name=[[UILabel alloc]initWithFrame:CGRectMake(kweight-130, kweight + 65, 140, 44)];
+    self.name=[[UILabel alloc]initWithFrame:CGRectMake(50, kweight + 65, kweight - 100, 44)];
     
     self.name.text=@"作品名及作者";
     self.name.numberOfLines = 0;
@@ -53,7 +53,7 @@
     
     
     
-    self.timelabel = [[UILabel alloc] initWithFrame:CGRectMake(5, kweight + 150, 50, 58)];
+    self.timelabel = [[UILabel alloc] initWithFrame:CGRectMake(5, kweight + 130, 50, 58)];
     self.timelabel.numberOfLines=0;
     self.timelabel.text = @"时间";
     self.timelabel.textColor= [UIColor orangeColor];
@@ -63,7 +63,8 @@
     
     
     
-    self.sentencelabel = [[UILabel alloc] initWithFrame:CGRectMake(60, kweight + 130, kweight - 65, 125)];
+    
+    self.sentencelabel = [[UILabel alloc] initWithFrame:CGRectMake(60, kweight + 110, kweight - 65, kheight - (kheight * 51/100 + 50 + 90 + 50))];
     self.sentencelabel.text = @"hahahh";
     
     self.sentencelabel.tintColor = [UIColor redColor];

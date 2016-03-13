@@ -81,7 +81,7 @@
     //设置标签栏文字
     Problemvc.tabBarItem.title = @"问题";
     //设置标签栏图片
-    Problemvc.tabBarItem.image = [UIImage imageNamed:@"Icon-Spotlight-43"];
+    Problemvc.tabBarItem.image = [UIImage imageNamed:@"Icon-Spotlight-48"];
     
     
     //东西
